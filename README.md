@@ -1,18 +1,17 @@
-# Engine de Tradução e Mapeamento de Termos Técnicos
-# Desenvolvido por Vitor - Estudante de ADS (Foco em Compliance)
+# 🛡️ Data Mapping Engine - Guardian Project
 
-# O dicionário é a base de conhecimento do sistema
-termos_tecnicos = {
-    "compliance": "conformidade",
-    "risk_assessment": "análise de risco",
-    "data_privacy": "privacidade de dados"
-}
+Este repositório contém o motor de processamento e tradução de dados do **Guardian Project**. 
 
-def traduzir_termo(termo):
-    # Uso do .get() para evitar que o sistema quebre (Maturidade Técnica)
-    resultado = termos_tecnicos.get(termo.lower(), "Termo não encontrado na base de dados.")
-    return resultado
+### 🚀 Objetivo
+Como estudante de ADS, desenvolvi este módulo para realizar a normalização e tradução de termos técnicos fundamentais para auditorias de conformidade internacional (Compliance). Este é o primeiro passo para a análise de riscos automatizada.
 
-# Simulação de consulta
-termo_busca = "compliance"
-print(f"Resultado da análise: {traduzir_termo(termo_busca)}")
+### 🛠️ Funcionalidades Técnicas
+- **Mapeamento via Dicionários:** Uso estratégico de estruturas de dados (Hash Maps/Dicionários) para busca rápida de termos.
+- **Programação Defensiva:** Implementação de métodos de busca que evitam erros de execução (Crash) caso o termo não seja encontrado.
+- **Foco em Compliance:** Base de dados inicial focada em termos de auditoria Brasil-Polônia-Paraguai.
+
+### 💻 Como o código funciona
+O sistema recebe um "input" (termo técnico) e retorna o mapeamento correspondente na base de dados de risco, garantindo integridade na comunicação entre APIs e usuários.
+
+---
+*Este projeto faz parte do meu desenvolvimento contínuo em Análise e Desenvolvimento de Sistemas na UniCesumar.*
